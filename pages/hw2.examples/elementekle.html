@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<p>element 1</p>
+		<p>element 1</p>
+		<p>element 1</p>
+		<p>element 1</p>
+	</div>
+	<div>
+		<button>element ekle</button>
+		<button>element ekle</button>
+		<button>element ekle</button>
+	</div>
+	<script>
+		var parentDiv=document.querySelector('DivParent');
+		var p1=document.querySelector('#p1');
+
+		function createElementDOM(){
+			var p=document.createElement("p");
+			var text=document.createTextNode("Javascript");
+			p.appendChild(text);
+			parentDiv.insertBefore(p,p3);
+		}
+		function removeElementDOM(){
+			p3.parentNode.removeChild(p3);
+		}
+		function replaceElementDOM(){
+			var p=document.createElement("p");
+			var text=document.createTextNode("yeni oluştu");
+			p.appendChild(text);
+			parentDiv.replaceChild(p,p1);
+		}
+	</script>
+
+</body>
+</html>

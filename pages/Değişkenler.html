@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>JavaScript</title>
+</head>
+<body >
+	<header>
+		<ul class="menu">
+			<li><a href="#">Hatun Koç</a></li>
+			<li><a href="#">Görüş ve Öneriler</a>
+			<ul class="hidden">
+				<li><a href="hw2.examples\adamAsmaca.html">Adam Asmaca Oyunu</a></li>
+				<li><a href="hw2.examples\alısverisListesi.html">Alışveriş Listesi</a></li>
+				<li><a href="hw2.examples\kullaniciformu.html">Kullanıcı Formu</a></li>
+			</ul></li>
+		<li>
+			<a class="11" href="index.html">JavaScript</a>
+			<ul class="hidden">
+				<li><a href="javaScriptGiris.html">JavaScript Giriş</a></li>
+				<li><a href="JavaScriptYazılım.html">JavaScript Yazılım (Syntax) yapısı</a></li>
+				<li><a href="Değişkenler.html">Değişkenler</a></li>
+				<li><a href="Operatörler.html">Operatörler</a></li>
+				<li><a href="Aritmetik.html">Aritmetik</a></li>
+				<li><a href="Veri Tipleri.html">Veri Tipleri</a></li>
+				<li><a href="Fonksiyon Yapısı.html">Fonksiyon Yapısı</a></li>
+				<li><a href="Olaylar.html">Olaylar (Events)</a></li>
+				<li><a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+				<li><a href="If koşul yapıları.html">If koşul yapıları</a></li>
+				<li><a href="Döngüler.html">Döngüler</a></li>
+				<li><a href="Tip Dönüşümleri.html">Tip Dönüşümleri</a></li>
+				<li><a href="Çalışma yapısı.html">Çalışma yapısı ve genel mimarisi</a></li>
+				<li><a href="JavaScript Fonksiyon Kullanımı.html">JavaScript Fonksiyon Kullanımı</a></li>
+				<li><a href="JavaScript Object ( Nesne) Modeli ve Kullanımı.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+				<li><a href="JavaScript DOM (Document Object Model) Kullanımı.html">JavaScript DOM (Document Object Model) Kullanımı</a></li>
+			</ul>
+
+
+		</li>
+	</ul>
+	</header>
+	<section>
+		<h1 style="padding-top: 50px;font-size: 50px!important;">Değişkenler;</h1>
+		<p style="font-weight: 500!important; font-size: 25px!important;">Değişken, programın çalışması için gerekli verilerin tanımlanarak, bellek üzerinde tutulduğu bölgelere verilen isimlerdir. Bellek hücrelerini birerli yada bir kaçının bir araya gelerek oluşturdukları grupları kutuya benzetirsek kutunun üzerindeki değişken adı, kutunun içindeki de değişkenin içindeki değer olarak düşünebiliriz. Yukarıdaki şekilde olduğu gibi kutu değişken adını, içerisindeki değer ise kutunun tuttuğu veriyi ifade etmektedir.</p>
+		<h2>JavaScript Veri Tipleri</h2>
+		<p style="font-weight: 500!important; font-size: 25px!important;">JavaScriptte 6 temel veri tipi vardır. JavaScript değişken tanımlama yapıldığında bu tiplerden biri olarak değişken tanımlanmış olur.</p>
+		<ul style="font-size: 25px!important;" class="list">
+			<li><a>Boolean: Mantıksal varlığı ifade eder. İki tip değer içerebilir true ve false</a></li>
+			<li><a>Null: Tam olarak null değerini taşıyan veri türüdür.</a></li>
+			<li><a>Undefined: Değişken tanımlanmış ama değer atanmamış ise değişken içindeki değer undefined dir</a></li>
+			<li><a>Number: EcmaScript standartlarına göre 64bit işaretli tek sayı tipi vardır. Tam yada ondalıklı sayılar number tipi ile ifade edilmektedir. Ek olarak +Infinity, -Infinity, and NaN (not-a-number) olmak üzere 3 tane özel sembolik değer vardır.</a></li>
+			<li><a>String: JavaScript dizge üzerinde metinsel verileri temsil etmek için kullandığı veri tipidir. Dizgedeki her öğe 16 bitlik işaretsiz integer bir referansı vardır. Dizgedeki ilk elemanın index numarası 0 dır. Dizgedeki diğer değerler için index numarası 1 artarak devam eder. Özetle: Metinsel bir ifade karakterlerden oluşan bir dizi olarak nitelendirilir.</a></li>
+			<li><a>Symbol ( ECMAScript 6): EcmaScript 6 standartı ile tanımlanmış bir tipdir. Nesne değeri için benzersiz ve sabit bir değeri ifade eder.</a></li>
+			<li><a>Object: Bellekteki belirli bir nesnenin referansını(yolunu) tutmak için kullanılan tiptir. Dizi, Fonksiyon ve Nesneler bu tip ile ifade edilir.</a></li>
+		</ul>
+		<h2>JavaScript Değişken Tanımlama</h2>
+		<p style="font-weight: 500!important; font-size: 25px!important;">JavaScript’te değişkenler  var anahtar kelimesi ile tanımlanır. Tüm veri türleri için var ifadesi ile değişken tanımlaması yapılır. JavaScript ile değişken tanımlarken bilinmesi gereken bazı temel kurallar var.</p>
+		<ul style="font-size: 25px!important;" class="list">
+			<li><a>Değişken kullanılmadan önce tanımlanmış olması gerekir.</a></li>
+			<li><a>Bir değişken bir kapsam içinde tanımlanmış ise sadece o kapsam içinde kullanılabilir. Tanımlandığı aralıkta kullanılabilir.</a></li>
+			<li><a>Bir değişken tanımlayıcı (var) kullanılmadan değer atanmış ise bu değişken global olarak tanımlanır ve her yerden ulaşılabilir.</a></li>
+		</ul>
+		<h2>Değişken Tanımlama Kuralları</h2>
+		<ul style="font-size: 25px!important;" class="list">
+			<li><a>Değişken isimleri büyük-küçük harf duyarlıdır. Yani ad ile AD aynı değişkeni göstermez..</a></li>
+			<li><a>Değişken isimlerinde Türkçeye özgü karakterler kullanılmamalıdır.</a></li>
+			<li><a>Değişken isimleri ?,!,:,%,- gibi özel karakterler içeremez.(_ karakteri hariç)</a></li>
+			<li><a>Değişken ismi olarak JavaScript dilindeki özel kelimeler seçilemez.</a></li>
+			<li><a>Değişken isimlerinde zorunlu olmamasına karşın küçük harf kullanımı tercih edilir. Eğer değişken ismi iki ya da daha fazla kelimeden oluşuyorsa ilk kelime hariç diğer kelimelerin ilk harfi büyük yazılır. (sayi, maasMiktari, kitapSayisi v.b.)</a></li>
+			<li><a>Değişken isimleri sayı ile başlayamaz.</a></li>
+		</ul>
+	</section>
+
+</body>
+</html>

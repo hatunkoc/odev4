@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>JavaScript</title>
+</head>
+<body >
+	<header>
+		<ul class="menu">
+			<li><a href="#">Hatun Koç</a></li>
+			<li><a href="#">Görüş ve Öneriler</a>
+			<ul class="hidden">
+				<li><a href="hw2.examples\adamAsmaca.html">Adam Asmaca Oyunu</a></li>
+				<li><a href="hw2.examples\alısverisListesi.html">Alışveriş Listesi</a></li>
+				<li><a href="hw2.examples\kullaniciformu.html">Kullanıcı Formu</a></li>
+			</ul></li>
+		<li>
+			<a class="11" href="index.html">JavaScript</a>
+			<ul class="hidden">
+				<li><a href="javaScriptGiris.html">JavaScript Giriş</a></li>
+				<li><a href="JavaScriptYazılım.html">JavaScript Yazılım (Syntax) yapısı</a></li>
+				<li><a href="Değişkenler.html">Değişkenler</a></li>
+				<li><a href="Operatörler.html">Operatörler</a></li>
+				<li><a href="Aritmetik.html">Aritmetik</a></li>
+				<li><a href="Veri Tipleri.html">Veri Tipleri</a></li>
+				<li><a href="Fonksiyon Yapısı.html">Fonksiyon Yapısı</a></li>
+				<li><a href="Olaylar.html">Olaylar (Events)</a></li>
+				<li><a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+				<li><a href="If koşul yapıları.html">If koşul yapıları</a></li>
+				<li><a href="Döngüler.html">Döngüler</a></li>
+				<li><a href="Tip Dönüşümleri.html">Tip Dönüşümleri</a></li>
+				<li><a href="Çalışma yapısı.html">Çalışma yapısı ve genel mimarisi</a></li>
+				<li><a href="JavaScript Fonksiyon Kullanımı.html">JavaScript Fonksiyon Kullanımı</a></li>
+				<li><a href="JavaScript Object ( Nesne) Modeli ve Kullanımı.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+				<li><a href="JavaScript DOM (Document Object Model) Kullanımı.html">JavaScript DOM (Document Object Model) Kullanımı</a></li>
+			</ul>
+
+
+		</li>
+	</ul>
+	</header>
+	<section>
+		<h1 style="padding-top: 50px;font-size: 50px!important;">Fonksiyon Yapısı;</h1>
+		<p style="font-weight: 500!important; font-size: 25px!important;">Foksiyonlar, JavaScript'in en temel yapıtaşlarından biridir. Her bir fonksiyon, bir JavaScript işlemidir—herhangi bir görevi yerine getiren  veya değer hesaplayan bir ifade kümesini içerirler. Bir fonksiyonu kullanmak için, fonksiyonu çağıracağınız kısmın faaliyet gösterdiği alanda fonksiyonu tanımlıyor olmanız gerekmektedir.</p>
+		<h2>Fonksiyonların tanımlanması</h2>
+		<p style="font-weight: 500!important; font-size: 25px!important;">Bir fonksiyon tanımı (fonksiyon betimlemesi, veya fonksiyon ifadesi de denir)  function anahtar kelimesinden sonra aşağıdaki kısımları içerir:Fonksiyonun adı, Fonksiyonun aldığı parametreler (parantezler ile çevrili ve virgüller ile birbirinden ayrılmış olmalıdırlar), Çalıştırılacak JavaScript ifadeleri (süslü parantezler ile çevrilmelidir). Sayı türünde olduğu gibi ilkel parametreler fonksiyonlara değer ile geçilirler; ilgili değer, fonksiyona parametre olarak geçildiğinde parametre değerinin fonksiyonda ayrı bir kopyası alınır, eğer fonksiyon içerisinde parametre değerinde değişik yapılırsa, bu değişiklik sadece kopyalanan değer üzerinde gerçekleşmiştir, fonksiyona geçilen asıl değer değişmez. Eğer bir nesneyi (Array veya bir kullanıcı tanımlı nesne gibi ilkel olmayan değer) fonksiyona parametre olarak geçerseniz, nesne fonksiyon içerisinde kopyalanmadığı için nesne üzerinde yapılan değişiklikler fonksiyon dışında da korunur. Aşağıdaki örneği inceleyelim:</p>
+		<h2>Fonksiyon ifadeleri</h2>
+		<p style="font-weight: 500!important; font-size: 25px!important;">Yukarıdaki fonksiyon tanımlaması sözdizimsel olarak bir ifade olmasına rağmen, fonksiyonlar ayrıca bir fonksiyon ifadesi ile de oluşturulabilirler. Böyle bir fonksiyon anonim olabilir; bir isme sahip olmak zorunda değildir. Örnek olarak, matematikteki kare alma fonksiyonu aşağıdaki şekilde tanımlanabilir. Fonksiyon ifadesi ile belirtilen fonksiyon adı, fonksiyonun içerisinde kendisini çağıracak şekilde kullanılabilir. Fonksiyon ifadeleri, bir fonksiyon diğer fonksiyona parametre olarak geçilirken oldukça elverişlidir. Aşağıdaki örnekte map fonksiyonu tanımlanmış ve ilk parametresinde başka bir fonksiyonu parametre olarak almıştır.</p>
+		<h2>Fonksiyonları çağırma</h2>
+		<p style="font-weight: 500!important; font-size: 25px!important;">Bir fonksiyonu tanımlamakla o fonksiyon çalışmaz. Fonksiyonu tanımlamak kısaca, o fonksiyona bir isim vermek ve o fonkisyon çağırıldığında bizim için hangi eylemleri yapması gerektiğini belirtmektir. Fonksiyonu çağırmak, bu belirlenmiş eylemleri bizim o fonksiyona verdiğimiz parametrelerin de kullanılmasıyla gerçekleştirir.  Örneğin,  karesiniAl diye bir fonksiyon tanımladığınızda, o fonksiyonu aşağıdaki gibi çağırabilirsiniz. Bu ifade, fonksiyona parametre olarak 5 sayısını yollayarak çağırır. Fonksiyon, tanımlanırken belirttiğimiz eylemleri yapar ve bize 25 değerini döndürür.</p>
+	</section>
+
+</body>
+</html>
